@@ -167,7 +167,7 @@ COPY ./conf/nginx.conf /etc/nginx/nginx.conf
 COPY ./conf/nginx-default.conf /etc/nginx/conf.d/default.conf
 COPY index.php /var/www/html/index.php
 
-EXPOSE 80
+EXPOSE 80 443
 
 STOPSIGNAL SIGTERM
 
