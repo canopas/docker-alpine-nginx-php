@@ -174,6 +174,4 @@ EXPOSE 80 443
 
 STOPSIGNAL SIGTERM
 
-CMD /usr/sbin/nginx
-
-ENTRYPOINT [ "sh", "-c", "/usr/bin/supervisord -n -c /etc/supervisord.conf" ]
+ENTRYPOINT [ "bash", "-c", "/usr/bin/supervisord -n -c /etc/supervisord.conf" ]
