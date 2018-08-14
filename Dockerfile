@@ -161,6 +161,9 @@ RUN sed -i \
 RUN apk add --no-cache supervisor && \
     mkdir -p /var/log/supervisor
 
+RUN apk add --no-cache bash
+RUN apk add --no-cache git
+
 ADD conf/supervisord.conf /etc/supervisord.conf
 
 COPY ./conf/nginx.conf /etc/nginx/nginx.conf
